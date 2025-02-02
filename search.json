@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Notes to myself\nI use this website as an informal notebook, mostly to my future self (so I can use my memory for more mundane things like ‘buy bread’ or ‘save the world’)… but also because I like to think it might be of (some) use to others.\nSubjects include programming, research, education, dataviz, and other interests. If you find it useful, spot mistakes, or have anything to comment on a given post, let me know!\nI leave my social networks here because why not? But I am not really active in there (I actually try to avoid them!). But if you’d like to send me an email, I will be delighted to discuss collaborations and exchange ideas."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "First post",
+    "section": "",
+    "text": "Yep, we’re here now.\nI found a good excuse to change/refresh my website: I discovered Quarto. So I’ll be moving all my posts to this new site, and maybe even add a few things (such as the IA-generated image below) just for fun. Let’s see how it goes. See you around!\n\n\n\nGemini’s “network into a Drosophila eye”"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Let’s start from scratch",
+    "section": "",
+    "text": "You’re starting a new project. You want to capture all the relevant material and outcomes, in a clean, neat and navigable structure. How to organize it in your computer? Which folder structure is appropriate?\nThe ‘project’ can be almost anything: your PhD thesis, an online course, a data science project, a commercial testing program… anything that uses data and generates an outcome.\nAfter years of trial-and-error in different contexts, I have settled a flexible and generalizable folder structure that is at the same time easy to navigate and understand (by me anyway!).\nYou can have a look at the one I use, and read why. You can even download the entire folder and unzip it to your computer to use as template. Each of the 3 folders (and their subfolders) are explained in detail, with even some examples. Check it out, and use as inspiration or simply dowload to start populating with files and get your project running.\n\nCheck the Project template\n\n\n\n\n\nMy new rule is: the image will have nothing to do with the post!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rodrigo Gonçalves",
+    "section": "",
+    "text": "Let’s start from scratch\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\nRodrigo\n\n\n\n\n\n\n\n\n\n\n\n\nFirst post\n\n\n\n\n\n\n\n\n\n\n\nFeb 4, 2023\n\n\nRodrigo\n\n\n\n\n\n\nNo matching items"
+  }
+]

@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.88704099"
-     inkscape:cx="2031.4732"
-     inkscape:cy="1577.1537"
+     inkscape:zoom="0.6272327"
+     inkscape:cx="2729.4495"
+     inkscape:cy="542.06358"
      inkscape:window-width="1920"
      inkscape:window-height="1026"
      inkscape:window-x="1920"
@@ -192,11 +192,11 @@
          transform="translate(218.01671,-22.174533)"><tspan
            x="397.51144"
            y="-12.09161"
-           id="tspan9">Of all the water
+           id="tspan1">Of all the water
 </tspan><tspan
            x="397.51144"
            y="47.43964"
-           id="tspan11">in the World</tspan></text><text
+           id="tspan2">in the World</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:47.625px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;text-anchor:middle;white-space:pre;inline-size:559.472;display:inline;fill:#000000;stroke-width:0.264583;-inkscape-stroke:none;stop-color:#000000"
          x="397.51144"
@@ -205,15 +205,15 @@
          transform="translate(584.63525,-255.30561)"><tspan
            x="397.51144"
            y="-12.09161"
-           id="tspan15">only
+           id="tspan3">only
 </tspan><tspan
            x="397.51144"
            y="47.43964"
-           id="tspan16">0.0075%
+           id="tspan4">0.0075%
 </tspan><tspan
            x="397.51144"
            y="106.97089"
-           id="tspan17">is drinkable</tspan></text><g
+           id="tspan5">is drinkable</tspan></text><g
          id="g573"
          transform="translate(0,26.987511)"><path
            style="fill:#67889b;fill-opacity:1;stroke:none;stroke-width:0.952999;stroke-dasharray:none"
@@ -427,7 +427,7 @@
          transform="matrix(0.97854934,0,0,1.1472275,378.46737,86.60932)"><tspan
            x="397.51144"
            y="-12.09161"
-           id="tspan18">If we put all the existing water into a single tank truck, the renewable portion for human consumption would be only 3 glasses</tspan></text><g
+           id="tspan6">If we put all the existing water into a single tank truck, the renewable portion for human consumption would be only 3 glasses</tspan></text><g
          id="g717"><g
            id="g452"
            style="mix-blend-mode:normal"><image
@@ -604,9 +604,9 @@
            transform="translate(447.94229,115.51268)"><tspan
              x="397.51144"
              y="-12.09161"
-             id="tspan20"><tspan
+             id="tspan8"><tspan
                style="font-weight:normal"
-               id="tspan19">Infographic by Rodrigo J. Gonçalves (2025)</tspan></tspan></text></a><a
+               id="tspan7">Infographic by Rodrigo J. Gonçalves (2025)</tspan></tspan></text></a><a
          id="a3"
          xlink:href="https://unesdoc.unesco.org/ark:/48223/pf0000112671"
          transform="translate(148.63128,-19.712742)"
@@ -619,9 +619,9 @@
            transform="translate(541.39196,136.29512)"><tspan
              x="397.51144"
              y="-12.09161"
-             id="tspan22"><tspan
+             id="tspan10"><tspan
                style="font-weight:normal"
-               id="tspan21">Shiklomanov/UNESCO 1998</tspan></tspan></text></a><text
+               id="tspan9">Shiklomanov/UNESCO 1998</tspan></tspan></text></a><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;text-anchor:middle;white-space:pre;inline-size:848.037;display:inline;fill:#808080;stroke:#808080;stroke-width:0.264583;-inkscape-stroke:none;stop-color:#000000"
          x="397.51144"
@@ -630,8 +630,20 @@
          transform="translate(586.11215,116.58238)"><tspan
            x="397.51144"
            y="-12.09161"
-           id="tspan24"><tspan
+           id="tspan12"><tspan
    style="font-weight:normal"
-   id="tspan23">with data from</tspan><tspan
+   id="tspan11">with data from</tspan><tspan
    y="-12.09161"
-   id="tspan25"> </tspan></tspan></text></g></g></svg>
+   id="tspan13"> </tspan></tspan></text><a
+         id="a2"
+         xlink:href="https://shorturl.at/rHpCf"
+         transform="rotate(-90,834.78934,-214.26778)"><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;text-anchor:middle;white-space:pre;inline-size:848.037;display:inline;fill:#808080;stroke:#808080;stroke-width:0.264583;-inkscape-stroke:none;stop-color:#000000"
+           x="397.51144"
+           y="-12.09161"
+           id="text2"
+           transform="translate(517.54106,116.65467)"><tspan
+             x="397.51144"
+             y="-12.09161"
+             id="tspan14">https://shorturl.at/rHpCf</tspan></text></a></g></g></svg>

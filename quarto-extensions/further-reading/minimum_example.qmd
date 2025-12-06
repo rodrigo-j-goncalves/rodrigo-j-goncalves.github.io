@@ -1,17 +1,26 @@
 ---
-title: 'Further-reading, minimum example'
+title: '`further-reading` Quarto extension<br><br>Minimum example'
 format: revealjs
 filters:
-  - /r.all/r.rodrigo/work/teaching/UGR/2025-2026/Grado/EPC_all/EPC_c/01_presentaciones/RG-extensions/further-reading/_extensions/rodrigo-j-goncalves/further-reading/further-reading.lua
+  - further-reading
+
+self-contained: true
 ---
 
-## Further-reading extension
+## What is this
+
+- `further-reading` is a Quarto extension to be used with [revealjs](https://quarto.org/docs/presentations/revealjs/) format.
+- It takes all external links (used in the presentation) and list them in a single slide at the end of the presentation.
+
+## Minimum example 
 
 In the next slides we'll use several links. 
 
 - The [`further-reading`](https://github.com/rodrigo-j-goncalves/further-reading/) extension collects all the external links and list them (see last slide)
-- Only external links^[links to outside this presentation] are considered
-
+- Only *external links*^[links to outside this presentation] are considered:
+  - https, http, ftp
+  - We could add more (let me know)
+  
 ## Euler
 
 Do you know who [Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler) was?

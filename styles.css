@@ -1,0 +1,27 @@
+/* Custom extra CSS for the site. */
+
+/* ── Sketchy post cards ─────────────────────────────────────────────────── */
+
+/* Hand-drawn feel: asymmetric per-corner border-radius + offset shadow     */
+.quarto-listing .card {
+  border: 2px solid #75AADB;
+  border-radius: 2px 6px 4px 5px / 5px 3px 6px 2px;
+  box-shadow:
+    3px 4px 0 0 rgba(117, 170, 219, 0.35),
+    -1px -1px 0 0 rgba(117, 170, 219, 0.15);
+  transition:
+    box-shadow 0.18s ease,
+    transform  0.18s ease;
+}
+
+.quarto-listing .card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow:
+    5px 6px 0 0 rgba(117, 170, 219, 0.55),
+    -1px -1px 0 0 rgba(117, 170, 219, 0.2);
+}
+
+/* Remove the default Quarto card border so ours is the only one */
+.quarto-listing .card {
+  --bs-card-border-color: transparent;
+}

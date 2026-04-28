@@ -1,0 +1,24 @@
+/* Tufte parchment background for .RG_quote — quotes-collection post only */
+
+.RG_quote {
+  background:   #fffff8;
+  color:        #3b2a1a;
+  border:       1px solid #c9b99a;
+  border-radius: 2px 5px 3px 4px / 4px 2px 5px 3px;
+  box-shadow:
+    2px 3px 8px rgba(100, 70, 30, 0.18),
+    inset 0 0 0 1px rgba(180, 140, 80, 0.12);
+  padding:      1rem 2rem 1.2rem 4rem;
+}
+
+/* Keep the decorative quote mark readable on the parchment */
+.RG_quote::before {
+  color: #7a5c3a;
+  opacity: 0.25;
+}
+
+/* Author citation */
+.RG_quote footer {
+  color: #5a3e28;
+  opacity: 0.75;
+}

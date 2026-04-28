@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Rodrigo J. Gonçalves – Rodrigo J. Gonçalves - Home</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,17 +37,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54598184595bff52052853f355ee4b95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f9d912d1a7497c4802bf9bcc083011c7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-4615c32627ed11f739e445b1291fb8fb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-0b61f750d98396a94b7a1f1aad4bdf9b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -83,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -104,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -133,6 +135,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 <meta name="twitter:title" content="Rodrigo J. Gonçalves – Rodrigo J. Gonçalves - Home">
 <meta name="twitter:image" content="./posts/water/cover-small.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -301,12 +304,10 @@ window.Quarto = {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Rodrigo J. Gonçalves - Home</span>
     </a>
@@ -344,32 +345,33 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Rodrigo J. Gonçalves</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(2)</span></div><div class="category" data-category="aGlzdG9yeSUyMG9mJTIwc2NpZW5jZQ==">history of science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW5mb2dyYXBoaWM=">infographic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW5zcGlyYXRpb24=">inspiration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bW9kZXJu">modern <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cGFwZXJz">papers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cXVvdGVz">quotes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2NlbnRpZmljJTIwd3JpdGluZw==">scentific writing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2NpZW5jZSUyMGNvbW11bmljYXRpb24=">science communication <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2NpZW50aXN0cw==">scientists <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3R5bGU=">style <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2F0ZXI=">water <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2VsY29tZQ==">welcome <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Rodrigo J. Gonçalves</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-page-left">
 
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 
@@ -382,13 +384,26 @@ window.Quarto = {
 <a href="./posts/water/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./posts/water/cover-small.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./posts/water/cover-small.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 How much renewable water?
 </h5>
 <div class="listing-reading-time card-text text-muted">11 min</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('d2F0ZXI='); return false;">water</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW5mb2dyYXBoaWM='); return false;">infographic</div>
+
+</div>
 </div>
 </div></a>
 </div>
@@ -396,25 +411,93 @@ How much renewable water?
 <a href="./posts/post-with-code/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./posts/post-with-code/Gemini_Generated_Image_lz8mcylz8mcylz8m.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./posts/post-with-code/Gemini_Generated_Image_lz8mcylz8mcylz8m.jpeg" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Let’s start from scratch
 </h5>
 <div class="listing-reading-time card-text text-muted">1 min</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
+
+</div>
 </div>
 </div></a>
 </div>
 <div class="g-col-1" data-index="2" data-categories="bmV3cyUyQ3dlbGNvbWU=" data-listing-date-sort="1675465200000" data-listing-file-modified-sort="1739284574890" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
 <a href="./posts/welcome/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img loading='lazy' src="posts/welcome/thumbnail.jpg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 First post
 </h5>
 <div class="listing-reading-time card-text text-muted">1 min</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('d2VsY29tZQ=='); return false;">welcome</div>
+
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="c2NlbnRpZmljJTIwd3JpdGluZyUyQ3BhcGVycyUyQ3N0eWxlJTJDbW9kZXJuJTJDc2NpZW5jZSUyMGNvbW11bmljYXRpb24=" data-listing-date-sort="1614553200000" data-listing-file-modified-sort="1774607934326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="407">
+<a href="./posts/old-style-writing/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/old-style-writing/Gemini_Generated_Image_m1fsjmm1fsjmm1fs.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Old-style writing
+</h5>
+<div class="listing-reading-time card-text text-muted">3 min</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2NlbnRpZmljJTIwd3JpdGluZw=='); return false;">scentific writing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGFwZXJz'); return false;">papers</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3R5bGU='); return false;">style</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bW9kZXJu'); return false;">modern</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2NpZW5jZSUyMGNvbW11bmljYXRpb24='); return false;">science communication</div>
+
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="cXVvdGVzJTJDaGlzdG9yeSUyMG9mJTIwc2NpZW5jZSUyQ2luc3BpcmF0aW9uJTJDc2NpZW50aXN0cw==" data-listing-date-sort="1606863600000" data-listing-file-modified-sort="1777331315952" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="585">
+<a href="./posts/quotes-collection/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/quotes-collection/quotes-cover.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+My personal quotes collection
+</h5>
+<div class="listing-reading-time card-text text-muted">3 min</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cXVvdGVz'); return false;">quotes</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aGlzdG9yeSUyMG9mJTIwc2NpZW5jZQ=='); return false;">history of science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW5zcGlyYXRpb24='); return false;">inspiration</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2NpZW50aXN0cw=='); return false;">scientists</div>
+
+</div>
 </div>
 </div></a>
 </div>
@@ -840,6 +923,19 @@ First post
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p><a href="https://plankton.science/">Plankton Science</a> · <a href="https://bsky.app/profile/plankton-science.bsky.social">Bluesky</a> · <a href="https://github.com/rodrigo-j-goncalves">GitHub</a> · <a href="https://www.linkedin.com/in/rodrigo-j-gon%C3%A7alves/">LinkedIn</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

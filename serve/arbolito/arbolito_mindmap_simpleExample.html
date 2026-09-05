@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mind Map</title>
+<title>Great players - Arbolito Mind Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -139,7 +139,7 @@ svg:active { cursor: grabbing; }
   <span class="lbl">Layout</span>
   <button class="btn"        id="btn-radial"  onclick="setLayout('radial')">Radial</button>
   <button class="btn"        id="btn-topdown" onclick="setLayout('topdown')">Top-down</button>
-  <button class="btn active" id="btn-horiz"   onclick="setLayout('horiz')">Horizontal</button>
+  <button class="btn"        id="btn-horiz"   onclick="setLayout('horiz')">Horizontal</button>
   <button class="btn"        id="btn-reset"       onclick="location.reload()">Reset</button>
   <button class="btn"        id="btn-expand-all"  onclick="expandAll()">Expand all</button>
   <button class="btn"        id="btn-collapse-all" onclick="collapseAll()">Collapse all</button>
@@ -171,7 +171,8 @@ const RAW = {
           "children": [
             {
               "name": "Leo Messi",
-              "collapsed": true
+              "collapsed": true,
+              "link": "https://messi.com/en/"
             },
             {
               "name": "Pelé",
@@ -268,6 +269,7 @@ const PALETTE = [
 ];
 
 let layout  = 'horiz';
+const INIT_EXPAND = 'file';
 let isFirst = true;
 let autoFit = true;       // auto-fit viewport to tree; disabled by manual pan/zoom
 const stateMap = {};
@@ -316,6 +318,7 @@ function mkPlain(node, pathId) {
   return {
     name:     node.name,
     fontSize: node.fontSize || null,
+    link:     node.link || null,
     _hasKids: hasKids,
     children: (!stateMap[id] && hasKids)
       ? node.children.map(c => mkPlain(c, id + '\x01' + c.name))
@@ -557,6 +560,39 @@ function update(clickedPid) {
     .style('pointer-events','none')
     .text(d => stateMap[pid(d)] ? '\u25b8' : '\u25be');
 
+  // Link badge: drawn as SVG paths (not a text glyph), so it renders
+  // identically regardless of the viewer's fonts/emoji support.
+  const linkG = ne.filter(d => d.data.link)
+    .append('g')
+    .attr('class', 'node-link')
+    .style('cursor', 'pointer')
+    .attr('transform', d => {
+      const hw = nw(d.data.name, d.data.fontSize) / 2;
+      const hh = nh(d.data.name, d.data.fontSize) / 2;
+      return `translate(${hw - 11},${-hh + 10})`;
+    })
+    .on('click', (event, d) => {
+      event.stopPropagation();
+      window.open(d.data.link, '_blank', 'noopener,noreferrer');
+    });
+
+  linkG.append('circle')
+    .attr('r', 8)
+    .attr('fill', 'transparent');
+
+  linkG.append('path')
+    .attr('transform', 'scale(0.42) translate(-12,-12)')
+    .attr('d', 'M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71')
+    .attr('fill', 'none')
+    .attr('stroke', d => rgba(branchColor(d), 0.85))
+    .attr('stroke-width', 2.4)
+    .attr('stroke-linecap', 'round')
+    .attr('stroke-linejoin', 'round')
+    .style('pointer-events', 'none');
+
+  linkG.append('title')
+    .text(d => d.data.link);
+
   ne.transition().duration(dur).ease(d3.easeCubicInOut)
     .attr('transform', d => `translate(${d.px},${d.py})`)
     .style('opacity', 1);
@@ -636,7 +672,12 @@ function init() {
   const W = document.getElementById('canvas').clientWidth;
   const H = document.getElementById('canvas').clientHeight;
   centerG.attr('transform', centerTransform(W, H));
-  update(null);
+  ['radial','topdown','horiz'].forEach(id =>
+    document.getElementById('btn-'+id).classList.toggle('active', layout === id)
+  );
+  if (INIT_EXPAND === 'all')       setAllStates(false);
+  else if (INIT_EXPAND === 'none') setAllStates(true);
+  else                              update(null);
 }
 
 window.addEventListener('resize', () => {
